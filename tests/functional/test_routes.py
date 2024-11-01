@@ -32,9 +32,7 @@ def test_get_account(testing_client):
     _ = testing_client.post('/accounts', json={'name': 'John Doe', 'currency': '€', 'country':'Spain'})
     
     account = Account.query.filter_by(name='John Doe')[0]
-    
     response = testing_client.get(f'/accounts/{account.id}')
-    
     account = Account.query.get(account.id)
     
     assert response.status_code == 200
