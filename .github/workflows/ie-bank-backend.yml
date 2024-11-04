@@ -11,8 +11,8 @@ permissions:
   id-token: write
 
 env:
-  BACKEND_WEBAPP_DEV: aguadamillas-be-dev
-  BACKEND_WEBAPP_UAT: aguadamillas-be-uat
+  BACKEND_WEBAPP_DEV: jseijas-be-dev
+  BACKEND_WEBAPP_UAT: jseijas-be-uat
 
 jobs:
   build:
